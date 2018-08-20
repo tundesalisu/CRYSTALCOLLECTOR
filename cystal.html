@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css">
+   <!-- <link rel="stylesheet" href="style.css">-->
+    <title>Title</title>
+</head>
+
+<body style="background-color: khaki">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/js/bootstrap.min.js"></script>
+
+
+    <div class="container">
+
+
+        <div class="jumbotron" style="background: url('cys.jpg'); color: whitesmoke">
+            <div class="container">
+                <h1 class="text-center">Collector</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading" style='background-color: orange'>
+                        <h3 class="text-center">Panel title</h3>
+                    </div>
+                    <div class="panel-body text-center" style='background-color: wheat; height: 50px; margin-bottom: 20px;'>
+                        The player will have to guess the answer, just like in Word Guess. This time, though, the player will guess with numbers
+                        instead of letters
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="row">
+
+            <!--target result-->
+            <div class="col-lg-3">
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center" style="background: url('cys.jpg'); color: whitesmoke" >Target Result</h3>
+                    </div>
+                    <div>
+                        <h3 class="panel-body text-center" id = "targetResult">00000</h3>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--player result-->
+
+            <div class="col-lg-3">
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center" style="background: url('cys.jpg'); color: whitesmoke" >Player Result</h3>
+                    </div>
+                    <div>
+                        <h3 class="panel-body text-center" id = "playerResult">00000</h3>
+                    </div>
+                </div>
+
+            </div>
+            <!--cystallayout panel creation-->
+            <div class="col-lg-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center" style="background: url('cys.jpg'); color: whitesmoke">Crystal</h3>
+                    </div>
+                    <div class="panel-body text-center" style="height: 150px; background-color: gray; ">
+                        <img src="green.png" id ="green">
+                        <img src="blue.png" id ="blue">
+                        <img src="red.png" id ="red">
+                        <img src="yellow.png" id ="yellow">
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+        <!--result counters info panels-->
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center" style="background: url('cys.jpg'); color: whitesmoke">Win Counter</h3>
+                    </div>
+                    <div>
+                        <h3 class="panel-body text-center" id = "winCounter">00000</h3>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-lg-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center" style="background: url('cys.jpg'); color: whitesmoke">loss Counter</h3>
+                    </div>
+                    <div>
+                        <h3 class="panel-body text-center" id = "lossCounter">00000</h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+     <script src="logic.js"></script>
+</body>
+
+</html>
